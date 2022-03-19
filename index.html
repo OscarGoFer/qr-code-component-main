@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./reset.css" />
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- end google fonts -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | QR code component</title>
+		<style>
+			body {
+				background-color: hsl(212, 45%, 89%);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+			}
+			.container-qr {
+				width: 270px;
+				padding: 15px;
+				border-radius: 15px;
+				background-color: hsl(0, 0%, 100%);
+			}
+			.container-qr > img {
+				width: 100%;
+				border-radius: 10px;
+			}
+			.container-text {
+				padding: 0px 10px;
+			}
+			.container-text > .title {
+				margin-top: 20px;
+				font-family: "Outfit", sans-serif;
+				font-size: 20px;
+				color: hsl(218, 44%, 22%);
+				text-align: center;
+				font-weight: 700;
+				line-height: 24px;
+			}
+			.container-text > .text {
+				margin-top: 15px;
+				margin-bottom: 20px;
+				font-family: "Outfit", sans-serif;
+				font-size: 15px;
+				color: hsl(220, 15%, 55%);
+				text-align: center;
+				font-weight: 400;
+				line-height: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-qr">
+			<img src="./images/image-qr-code.png" alt="qr" />
+			<div class="container-text">
+				<h1 class="title">
+					Improve your front-end skills by building projects
+				</h1>
+				<p class="text">
+					Scan the QR code to visit Frontend Mentor and take your
+					coding skills to the next level
+				</p>
+			</div>
+		</div>
+	</body>
 </html>
